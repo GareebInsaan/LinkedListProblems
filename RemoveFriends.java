@@ -61,7 +61,7 @@ class LinkList {
 			return out ;
 		}
 	
-	//Method to reverse a link list provided with the head node using recursion
+	//Method to reverse link list provided with the head node using recursion
 	public Node reverse(Node n) {
 		
 		if(n==null || n.next==null){
