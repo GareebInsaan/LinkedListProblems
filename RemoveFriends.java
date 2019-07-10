@@ -18,7 +18,7 @@ class Node {
 	
 }
 
-//LinkList Class having the utility functions for implementing the link list.
+//LinkList Class having the utility functions for working with link list.
 class LinkList {
 	
 	private Node head ;
@@ -96,7 +96,7 @@ class LinkList {
 		return head ;
 	}
 	
-	
+	//method for removing element from the last
 	public void removeFromLast(){
 		Node curr = head ;
 		if(curr==null || curr.next == null) head = null;
@@ -135,7 +135,7 @@ class TestClass {
            Node curr = list.getHead();
            
            while(curr.next!=null){
-               
+               //checking the condition of popularity value for removing friend
                if(K >0 && (Integer.parseInt(curr.val) < Integer.parseInt(curr.next.val))){
                    if(prev==null) list.setHead(curr.next);
                    else{
@@ -149,7 +149,7 @@ class TestClass {
                    curr = curr.next ;
                }
            }
-           
+           //removing K elements if the elements are arranged in descending order
            if(K>0){
                while(K-->0) list.removeFromLast();
            }
@@ -161,3 +161,5 @@ class TestClass {
     }
     
 }
+
+NOTE : The soultion is partially accepted and gives TLE for most of the Test Cases.Will update the complete accepted code once I get.
