@@ -36,9 +36,10 @@ class Solution {
            prev = temp;
            temp = temp.next;
         }
-        
+        //if prev is not null then node is in between somewhere in list
         if(prev==null) head=temp.next;
         else{
+            //if temp node is not null then Node to be deleted is not the last Node
             if(temp!=null)
                 prev.next = temp.next;
             else
