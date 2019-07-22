@@ -12,6 +12,7 @@
  */
 class Solution {
     
+    //function to count the number of nodes in the list
     static int nodeCount(ListNode head){
         int count = 0 ;
         
@@ -23,8 +24,11 @@ class Solution {
     }
     
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        //getting the noOfNodes in the list
         int count = nodeCount(head);
-       // System.out.print(count);
+        
+        /*getting the position just before from the begining at 
+        which deletion is to be performed.*/
         int N = count-n;
         ListNode temp = head;
         ListNode prev = null;
